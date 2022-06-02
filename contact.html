@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 
 <head>
 
@@ -14,13 +14,40 @@
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
-    
+  
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+    });
+  });
+  </script>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>A place of Creation within the Social and Solidarity Economy</title>
+  <title data-i18n="title"></title>
   <link rel="shortcut icon" type="image/x-icon" href="img/logo_trans.ico" />
 
   <!-- Bootstrap core CSS -->
@@ -29,6 +56,8 @@
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/business-casual.min.css" rel="stylesheet">
@@ -47,12 +76,7 @@
     </button>
     <ul class="dropdown-menu dropdown-menu-select">
     <li><label class="dropdown-radio">
-        <input type="radio" value="en" name="lang" checked>
-        <i>EN</i>
-        </label>
-    </li>
-    <li><label class="dropdown-radio">
-        <input type="radio" value="ca" name="lang">
+        <input type="radio" value="ca" name="lang" checked>
         <i>CA</i>
         </label>
     </li>
@@ -66,8 +90,8 @@
 </form>
   
   <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <a href="index.html" alt="La Fresca Produccions">
-      <img class="logo-src" src="img/firma.png" alt="La Fresca Produccions">
+    <a href="index.html" alt="Alè de Vida">
+      <img class="logo-src" src="img/firma.png" alt="Alè de Vida">
       <span class="site-heading-upper text-primary mb-3" data-i18n="title"></span>
     </a>
   </h1>
@@ -85,7 +109,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
       <a class="navbar-brand text-uppercase d-lg-none" href="index.html">
-          <img class="logo-src" src="img/firma.png" alt="La Fresca Produccions"> 
+          <img class="logo-src" src="img/firma.png" alt="Alè de Vida"> 
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -93,32 +117,92 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.html#news" data-i18n="menu_about">Home</a>
+            <a class="nav-link text-uppercase text-expanded" href="index.html" data-i18n="menu_about">
+              <span class="sr-only">(current)</span>
+            </a>
           </li>
+           <!-- First Tier Drop Down -->
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.html#aboutus" data-i18n="menu_services">Services</a>
+            <label for="drop-2" class="toggle" data-i18n="menu_ritmatern"></label>
+            <a href="index.html#ritmatern" data-i18n="menu_ritmatern"></a>
+            <input type="checkbox" id="drop-2"/>
+            <ul>
+              <li>
+                <a href="ritmatern.html#opmatern" data-i18n="menu_ritmatern_1"></a>
+              </li>
+              <li>
+                <a href="ritmatern.html#poderpart" data-i18n="menu_ritmatern_2"></a>
+              </li>
+              <li>
+                <a href="ritmatern.html#partritual" data-i18n="menu_ritmatern_3"></a>
+              </li>
+              <li>
+                <a href="ritmatern.html#guitarist" data-i18n="menu_ritmatern_4"></a>
+              </li>
+              <li>
+                <a href="ritmatern.html#cerrada" data-i18n="menu_ritmatern_5"></a>
+              </li>
+            </ul>
           </li>
+           <!-- Second Tier Drop Down -->
           <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.html#studio" data-i18n="menu_management">Management</a>
+              <label for="drop-3" class="toggle" data-i18n="menu_dolmatern"></label>
+              <a href="index.html#lutmatern" data-i18n="menu_dolmatern"></a>
+              <input type="checkbox" id="drop-3"/>
+              <ul>
+               <li>
+                 <a href="products.html#guitarist" data-i18n="menu_dolmatern_1"></a>
+               </li>
+               <li>
+                 <a href="products.html#guitarist" data-i18n="menu_dolmatern_2"></a>
+               </li>
+             </ul>
           </li>
+          <li>
+            <!-- Third Tier Drop Down -->
+            <label for="drop-4" class="toggle" data-i18n="menu_espaivida"></label>
+            <a href="index.html#espaivida" data-i18n="menu_espaivida"></a>
+            <input type="checkbox" id="drop-4"/>
+            <ul>
+              <li>
+                <a href="products.html#guitarist" data-i18n="menu_espaivida_1"></a>
+              </li>
+              <li>
+                <a href="products.html#guitarist" data-i18n="menu_espaivida_2"></a>
+              </li>
+              <li>
+                <a href="products.html#guitarist" data-i18n="menu_espaivida_3"></a>
+              </li>
+              <li>
+                <a href="products.html#guitarist" data-i18n="menu_espaivida_4"></a>
+              </li>
+              <li>
+                <a href="products.html#guitarist" data-i18n="menu_espaivida_5"></a>
+              </li>
+            </ul>
+          </li>    
+          <!-- Fourth Tier Drop Down -->
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.html#gear" data-i18n="menu_experience">Experience</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="https://oriolcorroto.com/management.html" data-i18n="management">Management</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="clients.html" data-i18n="menu_music">Music</a>
+            <label for="drop-5" class="toggle" data-i18n="menu_music"></label>
+            <a href="index.html#musica" data-i18n="menu_music"></a>
+            <input type="checkbox" id="drop-5"/>
+              <ul>
+               <li>
+                 <a href="products.html#guitarist" data-i18n="menu_music_1"></a>
+               </li>
+               <li>
+                 <a href="products.html#guitarist" data-i18n="menu_music_2"></a>
+               </li>
+             </ul>
           </li>
           <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="contact.html" data-i18n="menu_contact">Contact
-              <span class="sr-only">(current)</span>
-              </a>
+            <a class="nav-link text-uppercase text-expanded" href="contact.html" data-i18n="menu_contact"></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  
     
     <section class="page-section cta">
       <div class="container">
@@ -132,7 +216,7 @@
                  </center>
               </h2>
               
-              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mknpljwl" method="post">
+              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xayvvzvp" method="post">
                 <fieldset id="fs-frm-inputs">
                         <div class="contact-clean">
                         <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
@@ -148,40 +232,19 @@
       </div>
     </section>
       
-    <section class="page-section about-heading">
-    <div class="container">
-      <a href="https://goo.gl/maps/pEiLTtzzBqydkWH38" target="blank">
-      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/map.png" alt="">
-      </a>
-      <div class="about-heading-content">
-        <div class="row">
-          <div class="col-xl-9 col-lg-10 mx-auto">
-            <div class="bg-faded rounded p-5">
-              <h2 class="section-heading mb-4">
-                <span class="section-heading-lower" data-i18n="visit_text_1"></span>
-              </h2>
-              <p class="mb-3" data-i18n="visit_text_2">
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section>
-      
    <footer class="footer text-faded text-center py-5">
     <div class="container">
-            <p class="m-0 small">Copyright &copy; La Fresca Produccions 2021 </p>
+            <p class="m-0 small">Copyright &copy; Alè de Vida 2022 </p>
             <a href="https://www.linkedin.com/company/la-fresca-produccions" target="blank">
                 <img class="img-fluid rounded about-heading-img mb-3 mb-lg-1" src="img/linkedin_web.png" alt="LinkedIn" style="height:40px;margin-bottom:10px;">
             </a>
-            <a href="https://www.instagram.com/lafrescaproduccions/" target="blank">
+            <a href="https://www.instagram.com/ale_de_vida/" target="blank">
                 <img class="img-fluid rounded about-heading-img mb-3 mb-lg-1" src="img/instagram_web.png" alt="Instagram" style="height:40px;margin-bottom:10px;">
             </a>
             <a href="https://www.facebook.com/La-Fresca-Produccions-111156364357065" target="blank">
                 <img class="img-fluid rounded about-heading-img mb-3 mb-lg-1" src="img/facebook_web.png" alt="Facebook" style="height:40px;margin-bottom:10px;">
             </a>
-            <a href="https://www.youtube.com/channel/UCxVl86rmQ15Q_frAyPSnv3g" target="blank">
+            <a href="https://www.youtube.com/channel/UC1C1ma8PJTyAASbR94xXmiA" target="blank">
                 <img class="img-fluid rounded about-heading-img mb-3 mb-lg-1" src="img/youtube_web.png" alt="Youtube" style="height:40px;margin-bottom:10px;">
             </a>
         </div> 
