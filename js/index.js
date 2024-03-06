@@ -98,8 +98,8 @@ class Translator {
   get defaultConfig() {
     return {
       persist: false,
-      languages: ["en"],
-      defaultLanguage: "en",
+      languages: ["fr"],
+      defaultLanguage: "fr",
       filesLocation: "./i18n"
     };
   }
@@ -107,8 +107,8 @@ class Translator {
 
 var translator = new Translator({
   persist: false,
-  languages: ["ca", "en", "es"],
-  defaultLanguage: "en",
+  languages: ["ca", "fr", "es"],
+  defaultLanguage: "es",
   detectLanguage: true,
   filesLocation: "./i18n"
 });
