@@ -1,36 +1,51 @@
 #mainNav {
   background-color: fade-out($secondary, 0.1);
   @include heading-font;
+  display: flex;
+  justify-content: center;  // centra toda la barra horizontalmente
+  align-items: center;      // centra verticalmente los items
+
   .navbar-brand {
     color: $primary;
   }
+
   .navbar-nav {
+    display: flex;               // alinea los <li> en fila
+    justify-content: space-around; // espacio uniforme entre items
+    align-items: center;
+
     .nav-item {
+      flex: 1;                   // cada item ocupa el mismo ancho
+      text-align: center;        // centra el texto dentro de cada item
+
       .nav-link {
         color: fade-out($white, 0.3);
-
         font-weight: 800;
+        padding: 15px 0;        // espaciado vertical uniforme
+
+        &:hover {
+          color: fade-out($white, 0.6);
+        }
       }
+
       &.active {
         .nav-link {
           color: $primary;
+
+          &:hover {
+            color: $primary;
+          }
         }
       }
     }
   }
+
+  // Media query para pantallas grandes
   @media (min-width: 992px) {
     .navbar-nav {
       .nav-item {
         .nav-link {
           font-size: 0.9rem;
-          &:hover {
-            color: fade-out($white, 0.6);
-          }
-        }
-        &.active {
-          .nav-link:hover {
-            color: $primary;
-          }
         }
       }
     }
