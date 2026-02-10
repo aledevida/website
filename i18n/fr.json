@@ -34,6 +34,7 @@
   "menu_formacions": "Reiki",
   "menu_formacions_1": "Séance",
   "menu_formacions_2": "Formation",
+  "menu_formacions_1_sub": "Séance individuelle",
   "menu_contact": "contact",
   "greeting": "Sobre Nosotros",
   "music_title": "Algunos proyectos",
@@ -248,5 +249,9 @@
   "master_1": "La maîtrise nous permet d'approfondir notre pratique pour être des maîtres Reiki.",
   "master_2": "Il apporte une étude et une compréhension profonde de soi et de l’outil Reiki. Il y a une reconnaissance et une analyse des étapes vécues au cours des différents niveaux afin de comprendre et de créer sa propre manière d'être enseignant de soi et des autres.",
   "master_3": "La méthode d'enseignement est assimilée pour pouvoir initier d'autres personnes.",
-  "master_4": "Si tu as envie de faire cette formation, <a href=\"https://aledevida.github.io/website/contact.html\">contacte-moi</a> et je t’enverrai les prochaines dates."
+  "master_4": "Si tu as envie de faire cette formation, <a href=\"https://aledevida.github.io/website/contact.html\">contacte-moi</a> et je t’enverrai les prochaines dates.",
+  "exp_sessio_1": "La base du souffle de vie. Des séances ouvertes à tous où nous observons ton énergie et où je canalise les messages qui émergent de ton processus. Ainsi, tandis que tu prends davantage conscience de l’énergie dans ton corps, nous allons chercher la racine du blocage que tu ressens, en l’amenant vers un plus grand équilibre et en restaurant ton champ énergétique.",
+  "exp_sessio_2": "Durant la séance, j’utilise la technique du Reiki, la canalisation et les constellations familiales, cette dernière lorsque qu’un mouvement systémique est nécessaire.",
+  "exp_sessio_3": "Séance de 1 h 15 min à Barcelone, dans le Solsonès ou en ligne. Prix : 70 euros (réservation avec un acompte de 20 euros).",
+  "exp_sessio_4": "Si tu souhaites prendre rendez-vous pour une séance en présentiel ou online, écris-moi ici : <a href=\"https://aledevida.github.io/website/contact.html\">contact</a>"
 }
