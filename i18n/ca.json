@@ -34,6 +34,7 @@
   "menu_formacions": "Reiki",
   "menu_formacions_1": "Sessió",
   "menu_formacions_2": "Formació",
+  "menu_formacions_1_sub": "Sessió 1:1",
   "menu_contact": "Contacte",
   "greeting": "Sobre Nosaltres",
   "music_title": "Alguns projectes",
@@ -249,4 +250,8 @@
   "master_2": "Porta l’estudi i comprensió profunda sobre un mateix i sobre l’eina de Reiki. Hi ha un reconeixement i anàlisi dels passos caminats durant els diferents nivells per poder comprendre i crear la pròpia manera de ser mestre d’un mateix i pels altres.",
   "master_3": "S’assimila el mètode d’ensenyament per poder iniciar a altres.",
   "master_4": "Si sents fer aquesta formació <a href=\"https://aledevida.github.io/website/contact.html\">posa’t en contacte amb mi</a> i t’envio les properes dates."
+  "exp_sessio_1": "La base d’alè de vida. Sessions per tothom on observem la teva energia i canalitzo els missatges que  arriben del teu procés. Així, mentre que tu prens més consciència de l’energia en el teu cos, anem a buscar l’arrel del bloqueig que sents, portant-lo a un major equilibri i restaurant el teu camp energètic.",
+  "exp_sessio_2": "Durant la sessió utilitzo la tècnica de Reiki, la canalització i les constel·lacions familiars, aquesta última si es necessita un moviment sistèmic.",
+  "exp_sessio_3": "Sessió de 1h 15min a Barcelona, al Solsonès o online. Preu: 70 euros (Reserva amb el pagament de 20 euros).",
+  "exp_sessio_4": "Si vols agendar una sessió presencial o online escriu-me aquí: <a href=\"https://aledevida.github.io/website/contact.html\">contacte</a>",
 }
